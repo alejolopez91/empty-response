@@ -1,0 +1,1225 @@
+  [1m[35m (531.3ms)[0m  [1m[35mCREATE DATABASE "empty_response_development" ENCODING = 'unicode'[0m
+  [1m[35m (392.5ms)[0m  [1m[35mCREATE DATABASE "empty_response_test" ENCODING = 'unicode'[0m
+Started GET "/cable" for 127.0.0.1 at 2023-02-22 21:56:36 -0500
+  [1m[35m (53.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230223024941_devise_create_users.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/cable" for 127.0.0.1 at 2023-02-22 21:56:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230223024941_devise_create_users.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1402181223916014465)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20230223024941)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "role" integer NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230223024941"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-23 02:56:51.892817"], ["updated_at", "2023-02-23 02:56:51.892817"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1402181223916014465)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable" for 127.0.0.1 at 2023-02-22 21:57:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-02-22 21:57:01 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Turbo::StreamsChannel is transmitting the subscription rejection
+Started GET "/" for 127.0.0.1 at 2023-02-22 21:57:07 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.9ms | Allocations: 473)
+Completed 200 OK in 21ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3736)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-02-22 21:57:08 -0500
+Started GET "/sessions/new" for 127.0.0.1 at 2023-02-22 21:57:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/new"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 21:58:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 670)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 53.7ms | Allocations: 7470)
+  Rendered layout layouts/application.html.erb (Duration: 575.0ms | Allocations: 145780)
+Completed 200 OK in 602ms (Views: 578.6ms | ActiveRecord: 5.8ms | Allocations: 153698)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-02-22 22:00:09 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 202)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2156)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8946)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 10345)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-02-22 22:00:28 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "role", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "admin@admin.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["role", nil], ["created_at", "2023-02-23 03:00:28.467504"], ["updated_at", "2023-02-23 03:00:28.467504"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 4.0ms | Allocations: 10309)
+
+
+  
+ActiveRecord::NotNullViolation (PG::NotNullViolation: ERROR:  null value in column "role" violates not-null constraint
+DETAIL:  Failing row contains (1, admin@admin.com, $2a$12$0letTTwmAyeB/HMnqYdPdet0c17Y21V8.8Xhz/9qYzz7v61.F0Z/2, null, null, null, null, 2023-02-23 03:00:28.467504, 2023-02-23 03:00:28.467504).
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:768:in `exec_params'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:768:in `block (2 levels) in exec_no_cache'
+activesupport (7.0.4.2) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (7.0.4.2) lib/active_support/dependencies/interlock.rb:41:in `permit_concurrent_loads'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:767:in `block in exec_no_cache'
+activesupport (7.0.4.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (7.0.4.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (7.0.4.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (7.0.4.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract_adapter.rb:765:in `block in log'
+activesupport (7.0.4.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract_adapter.rb:756:in `log'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:766:in `exec_no_cache'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:745:in `execute_and_clear'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:54:in `exec_query'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:132:in `exec_insert'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:92:in `exec_insert'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:167:in `insert'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/query_cache.rb:22:in `insert'
+activerecord (7.0.4.2) lib/active_record/persistence.rb:496:in `_insert_record'
+activerecord (7.0.4.2) lib/active_record/persistence.rb:1096:in `_create_record'
+activerecord (7.0.4.2) lib/active_record/counter_cache.rb:166:in `_create_record'
+activerecord (7.0.4.2) lib/active_record/locking/optimistic.rb:79:in `_create_record'
+activerecord (7.0.4.2) lib/active_record/attribute_methods/dirty.rb:222:in `_create_record'
+activerecord (7.0.4.2) lib/active_record/callbacks.rb:461:in `block in _create_record'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:929:in `_run_create_callbacks'
+activerecord (7.0.4.2) lib/active_record/callbacks.rb:461:in `_create_record'
+activerecord (7.0.4.2) lib/active_record/timestamp.rb:108:in `_create_record'
+activerecord (7.0.4.2) lib/active_record/persistence.rb:1067:in `create_or_update'
+activerecord (7.0.4.2) lib/active_record/callbacks.rb:457:in `block in create_or_update'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:929:in `_run_save_callbacks'
+activerecord (7.0.4.2) lib/active_record/callbacks.rb:457:in `create_or_update'
+activerecord (7.0.4.2) lib/active_record/timestamp.rb:126:in `create_or_update'
+activerecord (7.0.4.2) lib/active_record/persistence.rb:615:in `save'
+activerecord (7.0.4.2) lib/active_record/validations.rb:47:in `save'
+activerecord (7.0.4.2) lib/active_record/transactions.rb:298:in `block in save'
+activerecord (7.0.4.2) lib/active_record/transactions.rb:354:in `block in with_transaction_returning_status'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/transaction.rb:319:in `block in within_new_transaction'
+activesupport (7.0.4.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (7.0.4.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (7.0.4.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (7.0.4.2) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/transaction.rb:317:in `within_new_transaction'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:316:in `transaction'
+activerecord (7.0.4.2) lib/active_record/transactions.rb:350:in `with_transaction_returning_status'
+activerecord (7.0.4.2) lib/active_record/transactions.rb:298:in `save'
+activerecord (7.0.4.2) lib/active_record/suppressor.rb:50:in `save'
+devise (4.9.0) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (7.0.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1402181223916014465)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20230223024941)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP INDEX  "index_users_on_reset_password_token"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX  "index_users_on_email"[0m
+  [1m[35m (3.4ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20230223024941"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1402181223916014465)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1402181223916014465)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20230223024941)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "role" integer DEFAULT 0 NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230223024941"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1402181223916014465)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-02-22 22:01:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 103)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1460)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 22062)
+Completed 200 OK in 44ms (Views: 31.4ms | ActiveRecord: 3.8ms | Allocations: 25941)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-02-22 22:01:31 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "role", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "admin@admin.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["role", 0], ["created_at", "2023-02-23 03:01:32.040234"], ["updated_at", "2023-02-23 03:01:32.040234"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 220ms (ActiveRecord: 6.9ms | Allocations: 6834)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:01:32 -0500
+Processing by Rails::WelcomeController#index as TURBO_STREAM
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 281)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 909)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:01:32 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/log_out" for 127.0.0.1 at 2023-02-22 22:07:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/log_out"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-02-22 22:07:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:08:07 -0500
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 6.4ms | Allocations: 5276)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:08:08 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.2ms | Allocations: 280)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 911)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-02-22 22:08:24 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms | Allocations: 1905)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:08:24 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-02-22 22:09:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2023-02-22 22:10:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:10:41 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 280)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 858)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:10:49 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 246)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:14:26 -0500
+  
+ActionController::RoutingError (uninitialized constant HomeController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:15:11 -0500
+  
+ActionController::RoutingError (uninitialized constant HomeController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:15:23 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 21759)
+Completed 200 OK in 44ms (Views: 23.3ms | ActiveRecord: 5.7ms | Allocations: 30399)
+
+
+Started POST "/" for 127.0.0.1 at 2023-02-22 22:15:26 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:15:26 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 6939)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.3ms | Allocations: 8782)
+
+
+Started POST "/" for 127.0.0.1 at 2023-02-22 22:15:31 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:15:31 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6821)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 8495)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:17:41 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 8640)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms | Allocations: 10854)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"log_out", :controller=>"users"}):
+    13: 
+    14:   <body style="height: min-content;" class="my-auto w-full">
+    15:     <main class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    16:       <%= button_to "logout", { controller: "users", action: "log_out" }, method: :post %>
+    17:       <%= yield %>
+    18:     </main>
+    19:   </body>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:17:49 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8632)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms | Allocations: 11031)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"sign_out", :controller=>"users"}):
+    13: 
+    14:   <body style="height: min-content;" class="my-auto w-full">
+    15:     <main class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    16:       <%= button_to "logout", { controller: "users", action: "sign_out" }, method: :post %>
+    17:       <%= yield %>
+    18:     </main>
+    19:   </body>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:19:50 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 22773)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 5.3ms | Allocations: 28811)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}):
+    13: 
+    14:   <body style="height: min-content;" class="my-auto w-full">
+    15:     <main class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    16:       <%= button_to "logout", { controller: "sessions", action: "destroy" }, method: :post %>
+    17:       <%= yield %>
+    18:     </main>
+    19:   </body>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:20:01 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8626)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms | Allocations: 11024)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"users/sessions"}):
+    13: 
+    14:   <body style="height: min-content;" class="my-auto w-full">
+    15:     <main class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    16:       <%= button_to "logout", { controller: "users/sessions", action: "destroy" }, method: :post %>
+    17:       <%= yield %>
+    18:     </main>
+    19:   </body>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:20:14 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 7360)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 9799)
+
+
+Started POST "/users/sign_out" for 127.0.0.1 at 2023-02-22 22:20:16 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_out"):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:20:16 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 6762)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.2ms | Allocations: 8584)
+
+
+Started POST "/users/sign_out" for 127.0.0.1 at 2023-02-22 22:20:18 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_out"):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:20:18 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6762)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 8454)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:21:56 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 7400)
+Completed 200 OK in 25ms (Views: 18.3ms | ActiveRecord: 0.2ms | Allocations: 9645)
+
+
+Started POST "/users/sign_out" for 127.0.0.1 at 2023-02-22 22:21:58 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_out"):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:21:58 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6800)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 8628)
+
+
+Started POST "/users/sign_out" for 127.0.0.1 at 2023-02-22 22:21:59 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/sign_out"):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:21:59 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 6777)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.3ms | Allocations: 8463)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:23:04 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 7240)
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 9466)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-02-22 22:23:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:23:12 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6682)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 8514)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:23:29 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 7415)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.2ms | Allocations: 9629)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-02-22 22:23:30 -0500
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 9ms (ActiveRecord: 0.2ms | Allocations: 3203)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 22:23:30 -0500
+Processing by HomeController#index as TURBO_STREAM
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 477)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:23:30 -0500
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 546)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2247)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 9264)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 10643)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:23:53 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 528)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2198)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 9161)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 10689)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:24:52 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 528)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2200)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 9187)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 10729)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:26:02 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1219)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 9067)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.0ms | Allocations: 9891)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:26:45 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 528)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2199)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 9186)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 10603)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:28:13 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 528)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2198)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 9167)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 10684)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:28:21 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1219)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 9082)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 9919)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:28:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 681)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 5022)
+  Rendered layout layouts/application.html.erb (Duration: 121.6ms | Allocations: 62596)
+Completed 200 OK in 143ms (Views: 126.9ms | ActiveRecord: 3.1ms | Allocations: 72584)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:28:58 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1338)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 7938)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 8803)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-02-22 22:29:15 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 204)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2157)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 9025)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 10447)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:29:32 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1223)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 7882)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 8712)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-02-22 22:31:37 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 528)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2198)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 9166)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 10612)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 16:55:54 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 131)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 22.0ms | Allocations: 1219)
+  Rendered layout layouts/application.html.erb (Duration: 75.2ms | Allocations: 7982)
+Completed 200 OK in 125ms (Views: 81.9ms | Allocations: 8790)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-03-14 16:56:23 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 194)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2007)
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | Allocations: 8970)
+Completed 200 OK in 85ms (Views: 82.3ms | Allocations: 10036)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 16:56:26 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1223)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 7801)
+Completed 200 OK in 33ms (Views: 25.9ms | Allocations: 8623)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 16:57:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 683)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 25.3ms | Allocations: 5024)
+  Rendered layout layouts/application.html.erb (Duration: 214.9ms | Allocations: 56869)
+Completed 200 OK in 263ms (Views: 226.6ms | ActiveRecord: 12.6ms | Allocations: 66846)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 16:57:16 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1338)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 7939)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 8838)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 16:58:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 681)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 5022)
+  Rendered layout layouts/application.html.erb (Duration: 115.4ms | Allocations: 57052)
+Completed 200 OK in 137ms (Views: 120.1ms | ActiveRecord: 3.0ms | Allocations: 67028)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2023-03-14 16:58:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/new"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 16:58:46 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1330)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 8121)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 9014)
+
+
+Started GET "/users/sessions/new" for 127.0.0.1 at 2023-03-14 16:58:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sessions/new"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 16:59:26 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/macbookpro/.rvm/gems/ruby-3.1.0/gems/devise-4.9.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1219)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 7978)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 8718)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 16:59:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1796)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1907)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 4.1ms | Allocations: 11737)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Log in +++</h2>
+<div class="relative py-3 sm:max-w-xl sm:mx-auto">
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl" />
+  <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "current-password" %>
+      </div>
+
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    <% end %>
+
+    <%= render "users/shared/links" %>
+  </div>
+<% end %>
+
+):
+1:    <h2>Log in +++</h2>
+2:    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+3:      <div class="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl" />
+4:      <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+5:        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+6:          <div class="field">
+7:            <%= f.label :email %><br />
+8:            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+9:          </div>
+10:    
+11:          <div class="field">
+12:            <%= f.label :password %><br />
+13:            <%= f.password_field :password, autocomplete: "current-password" %>
+14:          </div>
+15:    
+16:          <% if devise_mapping.rememberable? %>
+17:            <div class="field">
+18:              <%= f.check_box :remember_me %>
+19:              <%= f.label :remember_me %>
+20:            </div>
+21:          <% end %>
+22:    
+23:          <div class="actions">
+24:            <%= f.submit "Log in" %>
+25:          </div>
+26:        <% end %>
+27:    
+28:        <%= render "users/shared/links" %>
+29:      </div>
+30:    <% end %>
+  
+app/views/users/sessions/new.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/users/sessions/new.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/users/sessions/new.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/users/sessions/new.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/users/sessions/new.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/users/sessions/new.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:00:19 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.2ms | Allocations: 665)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 22.1ms | Allocations: 7787)
+  Rendered layout layouts/application.html.erb (Duration: 150.0ms | Allocations: 59636)
+Completed 200 OK in 154ms (Views: 152.7ms | ActiveRecord: 0.0ms | Allocations: 61143)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:05:23 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 528)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2195)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 9172)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 10624)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:07:47 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 528)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2194)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 9361)
+Completed 200 OK in 24ms (Views: 21.6ms | Allocations: 10829)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:12:24 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 528)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2206)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 9191)
+Completed 200 OK in 16ms (Views: 15.2ms | Allocations: 10651)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:12:28 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1222)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 7812)
+Completed 200 OK in 14ms (Views: 12.5ms | Allocations: 8651)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:14:22 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 528)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2212)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 9195)
+Completed 200 OK in 20ms (Views: 18.1ms | Allocations: 10534)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:15:16 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1232)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 8013)
+Completed 200 OK in 18ms (Views: 16.9ms | Allocations: 8830)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:16:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.0ms | Allocations: 528)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2230)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 9214)
+Completed 200 OK in 17ms (Views: 15.9ms | Allocations: 10553)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:19:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.8ms | Allocations: 528)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2238)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 9216)
+Completed 200 OK in 19ms (Views: 17.9ms | Allocations: 10665)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:23:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.4ms | Allocations: 672)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 19.0ms | Allocations: 5046)
+  Rendered layout layouts/application.html.erb (Duration: 139.5ms | Allocations: 56973)
+Completed 200 OK in 171ms (Views: 147.8ms | ActiveRecord: 3.2ms | Allocations: 66855)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:26:05 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.1ms | Allocations: 133)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1363)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 7976)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 8858)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:33:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1244)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 10859)
+Completed 200 OK in 42ms (Views: 40.4ms | Allocations: 11621)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:33:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.3ms | Allocations: 528)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2233)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 9394)
+Completed 200 OK in 23ms (Views: 22.4ms | Allocations: 10728)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:35:28 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.3ms | Allocations: 528)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2246)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 9221)
+Completed 200 OK in 22ms (Views: 19.9ms | Allocations: 10662)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:39:59 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1255)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 8040)
+Completed 200 OK in 16ms (Views: 14.0ms | Allocations: 8874)
+
+
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-03-14 17:48:24 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 243ms (ActiveRecord: 8.7ms | Allocations: 9046)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-14 17:48:24 -0500
+Processing by HomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 465)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 7453)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 9972)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-28 21:45:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 729)
+  Rendered layout layouts/application.html.erb (Duration: 132.7ms | Allocations: 59041)
+Completed 200 OK in 182ms (Views: 137.2ms | ActiveRecord: 9.1ms | Allocations: 71892)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-03-28 21:45:43 -0500
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 15ms (ActiveRecord: 0.3ms | Allocations: 4402)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-28 21:45:43 -0500
+Processing by HomeController#index as TURBO_STREAM
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 519)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-28 21:45:43 -0500
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (Duration: 1.8ms | Allocations: 674)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 3460)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 10428)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 11992)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-03-28 21:45:47 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 237ms (ActiveRecord: 3.6ms | Allocations: 6655)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-28 21:45:47 -0500
+Processing by HomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 272)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6982)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 8919)
+
+
